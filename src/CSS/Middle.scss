@@ -1,0 +1,106 @@
+#middleSecSlider {
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 0.2rem;
+  transform: translate(17%, 9%);
+
+  #leftScrl {
+    position: sticky;
+    left: 29px;
+    top: 7%;
+    padding: 0.4rem;
+    opacity: 1;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid gray;
+    background-color: white;
+
+    &:hover {
+      background-color: rgb(235, 235, 235);
+      box-shadow: 21px 31px 11px white;
+    }
+  }
+
+  #rightScrl {
+    position: sticky;
+    left: 74%;
+    top: 10%;
+    padding: 0.4rem;
+    opacity: 1;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid gray;
+    background-color: white;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgb(235, 235, 235);
+      box-shadow: 21px 31px 11px white;
+    }
+  }
+}
+
+#middleSecSlider::-webkit-scrollbar {
+  display: none;
+}
+
+@media all and (max-width: 720px) {
+  #middleSecSlider {
+    transform: translate(59%,12%);
+    #rightScrl {
+      position: absolute;
+      left: 65%;
+      top: 10%;
+      position: sticky;
+      left: 30%;
+      top: 10%;
+    }
+  }
+}
+
+#leftButDiv {
+  width: max-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 0.3rem;
+  position: absolute;
+  transform: translate(-5%, 9%);
+  padding-right: 1rem;
+  border-right: 2px silver solid;
+
+  button {
+    width: max-content;
+    border-radius: 35%;
+    border: none;
+    height: fit-content;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+
+    &:hover {
+      border: 1px solid black;
+    }
+  }
+}
+
+
+
+@media   (max-width:1200px) and (min-width:768px)  {
+  #middleSecSlider {
+    transform: translate(30%,19%);
+    #rightScrl {
+      position: sticky;
+      left: 46%;
+      top: 10%;
+      padding: 0.4rem;
+      opacity: 1;
+      cursor: pointer;
+      border-radius: 50%;
+      border: 1px solid }
+  }
+}

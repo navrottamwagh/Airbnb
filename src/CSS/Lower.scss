@@ -1,0 +1,31 @@
+body {
+  font-size: 12px;
+}
+
+.scrollLowerSection {
+  border-radius: 50%;
+  background-color: white;
+  border: none;
+  margin-top: 30%;
+  border: 1px silver solid;
+  padding: 13px;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transform: translateY(-77%);
+
+  &:hover {
+    scale: 102%;
+  }
+}
+
+#LowerSecSlider {
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+
+#LowerSecSlider::-webkit-scrollbar {
+  display: none;
+}

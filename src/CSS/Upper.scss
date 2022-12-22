@@ -1,0 +1,48 @@
+.scrollbtn {
+  border-radius: 50%;
+  background-color: white;
+  border: none;
+  margin-top: 30%;
+  border: 1px silver solid;
+  padding: 13px;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover {
+    scale: 107%;
+  }
+
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+#slider {
+  overflow: scroll;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+#slider::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 50px) {
+
+  #btnCall{
+    display: flex;
+    justify-content: center;
+  }
+}
+@media   (max-width:1200px) and (min-width:728px)  {
+ #btnCall{
+    transform: translate(-250%,-10%);
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,84 @@
+#container {
+  position: relative;
+  left: 19%;
+
+  img {
+    height: 300px;
+    width: 550px;
+    border-radius: 2%;
+  }
+
+  span {
+    position: absolute;
+    top: 7%;
+    left: 3%;
+    color: white;
+  }
+
+  h1 {
+    position: absolute;
+    top: 9%;
+    left: 3%;
+    color: white;
+  }
+
+  button {
+    position: absolute;
+    bottom: 7%;
+    left: 3%;
+    padding: 0.3rem 0.7rem;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+
+    &:hover {
+      color: black;
+      background-color: whitesmoke;
+      font-weight: lighter;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  #container {
+    left: 5%;
+
+    img {
+      height: 130px;
+      width: 170px;
+      border-radius: 2%;
+    }
+
+    span {
+      position: absolute;
+      top: 7%;
+      left: 3%;
+      color: white;
+    }
+
+    h1 {
+      position: absolute;
+      top: 13%;
+      font-size: medium;
+      left: 3%;
+      color: white;
+    }
+
+    button {
+      position: absolute;
+      bottom: 7%;
+      left: 3%;
+      padding: 0.3rem 0.7rem;
+      background-color: white;
+      border: none;
+      border-radius: 5px;
+
+      &:hover {
+        color: black;
+        background-color: whitesmoke;
+        font-weight: lighter;
+      }
+    }
+  }
+}

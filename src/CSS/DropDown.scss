@@ -1,0 +1,32 @@
+#drop {
+  position: absolute;
+  top: 50%;
+  right: 25%;
+  transform: translate(55%, 15%) !important;
+  border: 1px  solid silver;
+  padding: 0.5rem;
+  background-color: white;
+  font-size: large;
+  font-weight: bold;
+  z-index: 10;
+  border-radius: 15%;
+  font-family: 'Abel', sans-serif;
+  display: none;
+  li {
+    list-style: none;
+  }
+}
+
+#main{
+button{
+    cursor: pointer;
+    padding: 0.3rem;
+    font-size: large;
+    background-color: white;
+    border-radius: 30%;
+    border: 1px solid silver;
+
+    &:hover {
+        box-shadow: 0px 11px 11px gray;
+    }
+}}
